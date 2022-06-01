@@ -15,6 +15,6 @@ namespace PhoneBookConsoleApp
         }
         public string Name { get; set; }
         public string Number { get; set; }
-        public string SearchPhrase { get; internal set; }
+        public string SearchPhrase { get;  set; }
     }
 }
