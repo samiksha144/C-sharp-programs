@@ -21,11 +21,11 @@ while (true)
     switch (userInput)
     {
         case "1":
-            Console.WriteLine("Enter Id");
+            Console.Write("Enter Id : ");
             int bookId = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Title");
+            Console.Write("Enter Title : ");
             var title = Console.ReadLine();
-            Console.WriteLine("Enter Author");
+            Console.Write("Enter Author : ");
             var author = Console.ReadLine();
 
             var newBook = new Book(bookId, title,author);
