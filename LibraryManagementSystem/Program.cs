@@ -9,6 +9,8 @@ Console.WriteLine("1 Add Books");
 Console.WriteLine("2 Display books by id");
 Console.WriteLine("3 View all books");
 Console.WriteLine("4 delete books");
+Console.WriteLine("5 search book by author");
+Console.WriteLine("6 search book by title");
 Console.WriteLine("Press 'x' to exit");
 
 var userInput = Console.ReadLine();
@@ -45,6 +47,18 @@ while (true)
             var deletebookbyid = int.Parse(Console.ReadLine());
             bookLibrary.DeleteBooks(deletebookbyid);
             Console.WriteLine("Book has been successfully deleted");
+            break;
+
+        case "5":
+            Console.WriteLine("Enter author");
+            var findbookbyauthor = Console.ReadLine();
+            bookLibrary.SearchBookByAuthor(findbookbyauthor);
+            break;
+
+        case "6":
+            Console.WriteLine("Enter Title");
+            var findbookbytitle = Console.ReadLine();
+            bookLibrary.SearchBookByTitle(findbookbytitle);
             break;
 
         case "x":
