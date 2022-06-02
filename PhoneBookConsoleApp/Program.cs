@@ -22,6 +22,7 @@ while(true)
             Console.WriteLine("Contact number");
             var number = Console.ReadLine();
 
+
             var newContact = new Contact(name, number);
             phoneBook.AddContact(newContact);
             break;
