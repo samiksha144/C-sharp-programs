@@ -55,6 +55,7 @@ namespace LibraryManagementSystem
         public void DeleteBooks(int BookId)
         {
             books.RemoveAll(Book => Book.BookId == BookId );
+           
         }
 
         public void SearchBookByAuthor(string Author)

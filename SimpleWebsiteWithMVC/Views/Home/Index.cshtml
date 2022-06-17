@@ -1,0 +1,49 @@
+﻿@model List<SimpleWebsiteWithMVC.Model.Book>
+
+<h1>Home</h1>
+
+<strong>Total Books We have is : </strong> @Model.Count<br />
+Logged In User Id : @ViewBag.UserId
+<div class="container">
+    <div class="row">
+        @foreach(var book in Model)
+        {
+            <div class="col-4">
+                <div class="card" style="width:300px">
+                    <img src="~/Images/@book.CoverImage" width=300 />
+                    <div class="card-body">
+                          <strong>@book.Title</strong>
+                     </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@*<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var book in Model)
+        {
+            <tr>
+                <td>
+                    <img src="~/Images/@book.CoverImage" 
+                                    width="150" 
+                                    height="150" />
+                </td>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td><a href="~/updatebook/@book.Id">Edit</a></td>
+            </tr>
+        }
+    </tbody>
+</table>*@
